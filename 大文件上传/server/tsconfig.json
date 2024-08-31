@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "sourceMap": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./*",
+      ]
+    },
+    "allowSyntheticDefaultImports": true, 
+  },
+  "include":["./**/*"],
+  "ts-node": {
+		"transpileOnly": true,
+		"files": true,
+		"experimentalResolver": true
+	}
+}
